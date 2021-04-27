@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón que botonea</title>
+</head>
+<body>
+    
+    <button onclick="indicaBotonPresionado(this)" id="boton1">Botón 1</button>
+    <button onclick="indicaBotonPresionado(this)" id="boton2">Botón 2</button>
+    <script>
+        function indicaBotonPresionado(boton){
+            const botonPresionado = document.getElementById(boton.id);
+            console.log("el boton presionado es:" + botonPresionado.textContent);
+        }
+    </script>
+</body>
+</html>
